@@ -1,99 +1,119 @@
-# 🎬 Devender — Cinematic Portfolio & Product Builder
+# Swaraj Thakre — Cinematic Portfolio
 
 <div align="center">
-  <img width="100%" alt="Swaraj" src="public/assets/preview.png"/>
+  <img src="./src/assets/Hero.webp" alt="Cinematic portrait of Swaraj Thakre" width="100%" />
 
-<br/><br/>
+  <br />
+  <br />
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-devendhargopagoni.netlify.app-00f2fe?style=for-the-badge&logo=netlify&logoColor=white)](https://devendhargopagoni.netlify.app/)
-[![React](https://img.shields.io/badge/React_19-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS_v4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
-[![Three.js](https://img.shields.io/badge/Three.js-000000?style=for-the-badge&logo=three.js&logoColor=white)](https://threejs.org/)
-[![Vite](https://img.shields.io/badge/Vite_v7-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
+  <p>A cinematic, responsive portfolio built to turn frontend work into an immersive digital experience.</p>
 
+  <p>
+    <a href="https://swarajthakre26.netlify.app/">Live site</a>
+    &nbsp;·&nbsp;
+    <a href="https://github.com/SwarajThakre">GitHub</a>
+    &nbsp;·&nbsp;
+    <a href="https://www.linkedin.com/in/swarajst/">LinkedIn</a>
+  </p>
+
+  <img src="https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React 19" />
+  <img src="https://img.shields.io/badge/TypeScript-5.8-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
+  <img src="https://img.shields.io/badge/Vite-7-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
 </div>
 
 ---
 
-## 🌟 Overview
+## About the project
 
-Hi, I'm **Devender** — a Full-Stack Web Developer and UI/UX-focused Product Builder. I specialize in designing and developing premium websites, SaaS platforms, AI-powered applications, dashboards, and modern digital experiences that solve real business problems.
+This is the personal portfolio of **Swaraj Thakre**, a frontend developer focused on polished interfaces, responsive experiences, and practical digital products. It combines a cinematic visual direction with interactive motion, project storytelling, and a clear path for visitors to explore skills and get in touch.
 
-This portfolio is built with a **cinematic UI theme**, incorporating fluid micro-animations, glassmorphic 3D interactive elements, and high-performance frontend architecture.
+## Highlights
 
----
+- Cinematic hero section with a custom portrait and animated typography
+- Interactive project carousel with keyboard, touch, and mouse interactions
+- Full project archive with category filters
+- 3D interactive ID card built with React Three Fiber
+- Responsive sections for skills, services, contact, and social links
+- React Router routes that work with direct links, including `/about` and `/all-projects`
 
-## 🚀 Key Features
+## Built with
 
-- **🎴 Interactive 3D ID Badge Card**: Glassmorphic lanyard ID card featuring dynamic 3D mouse tilt tracking, real-time specular light reflections, and custom portrait graphics.
-- **🎬 Cinematic Horizontal Project Reveal**: Custom project reveal carousel (_"Work that makes an impact."_) featuring peeking side previews, 3D tilt interaction, progress counters `[01 02 03 04 05]`, and floating device mockups.
-- **⚡ Interactive Tech Stack Grid**: Interactive grid showcasing core frontend, backend, database, and AI tool competencies.
-- **📄 Integrated Interactive Resume & Offerings**: Embedded resume preview and service offerings.
-- **📱 Direct Action & Social Integration**: Instant action buttons for **Email Me** and **WhatsApp** (`+91 7569949639`), alongside links to GitHub, LinkedIn, Instagram, and Telegram.
+| Area        | Tools                                            |
+| ----------- | ------------------------------------------------ |
+| Framework   | React 19, TypeScript, React Router               |
+| Styling     | Tailwind CSS v4, CSS, glassmorphism              |
+| Motion & 3D | Framer Motion, Three.js, React Three Fiber, Drei |
+| Tooling     | Vite, npm, Prettier                              |
+| Deployment  | Netlify or Vercel                                |
 
----
-
-## 🛠️ Tech Stack
-
-| Category            | Technologies                                                        |
-| :------------------ | :------------------------------------------------------------------ |
-| **Core Framework**  | React 19, TypeScript, React Router v7                               |
-| **Build & Tooling** | Vite v7, Bun / npm                                                  |
-| **3D & Motion**     | Three.js, `@react-three/fiber`, `@react-three/drei`, Framer Motion  |
-| **Styling**         | Vanilla CSS, Tailwind CSS v4, Glassmorphism, Responsive Breakpoints |
-| **Icons & UI**      | Lucide React, React Icons                                           |
-| **Deployment**      | Netlify Continuous Deployment                                       |
-
----
-
-## 💻 Getting Started Locally
+## Run locally
 
 ### Prerequisites
 
-Make sure you have **Node.js** (v18+) and **npm** installed on your system.
+- Node.js 18 or later
+- npm
 
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/devendharoff/devendhar-portfolio-cinematic.git
-cd devendhar-portfolio-cinematic
-```
-
-### 2. Install Dependencies
+### Installation
 
 ```bash
+git clone https://github.com/SwarajThakre/Cinematic-Portfolio.git
+cd Cinematic-Portfolio
 npm install
 ```
 
-### 3. Run Development Server
+### Development
 
 ```bash
 npm run dev
 ```
 
-Open your browser and navigate to `http://localhost:8080` (or the port specified in terminal output).
+Open the URL shown in the terminal. The local Vite server is configured to use port `8080` when it is available.
 
-### 4. Build for Production
+### Production build
 
 ```bash
 npm run build
+npm run preview
 ```
 
----
+## Available scripts
 
-## 📬 Contact & Connect
+| Command                | Purpose                                        |
+| ---------------------- | ---------------------------------------------- |
+| `npm run dev`          | Start the Vite development server              |
+| `npm run build`        | Create an optimized production build in `dist` |
+| `npm run preview`      | Preview the production build locally           |
+| `npm run format`       | Format the project with Prettier               |
+| `npm run format:check` | Check formatting without changing files        |
 
-- **Website**: [https://devendhargopagoni.netlify.app/](https://devendhargopagoni.netlify.app/)
-- **Email**: `devendhargopagoni@gmail.com`
-- **WhatsApp / Phone**: `+91 7569949639`
-- **GitHub**: [@devendharoff](https://github.com/devendharoff)
-- **LinkedIn**: [Devender Goud](https://www.linkedin.com/in/devender-goud-033875338/)
-- **Instagram**: [@devendharoff](https://www.instagram.com/devendharoff/?hl=en)
-- **AI Agency**: [@connects.ai](https://www.instagram.com/connects.ai)
+## Deploy
 
----
+The project is ready to deploy as a static Vite application.
+
+- **Vercel:** import the repository, use `npm run build` as the build command, and set `dist` as the output directory. The included `vercel.json` preserves React Router routes.
+- **Netlify:** import the repository, build with `npm run build`, and publish the `dist` directory.
+
+## Project structure
+
+```text
+src/
+├── assets/              # Hero portrait and project imagery
+├── components/          # Reusable interactive sections
+├── data/                # Typed project data
+├── pages/               # About and all-projects routes
+├── App.tsx              # Application layout and routes
+└── styles.css           # Global Tailwind theme and styles
+```
+
+## Connect
+
+- Portfolio: [swarajthakre26.netlify.app](https://swarajthakre26.netlify.app/)
+- Email: [swarajthakre.stud@gmail.com](mailto:swarajthakre.stud@gmail.com)
+- GitHub: [@SwarajThakre](https://github.com/SwarajThakre)
+- LinkedIn: [Swaraj Thakre](https://www.linkedin.com/in/swarajst/)
+- Instagram: [@dollar_thakre26](https://www.instagram.com/dollar_thakre26/)
 
 <div align="center">
-  <sub>Built with ❤️ by Devender</sub>
+  <sub>Designed and developed by Swaraj Thakre.</sub>
 </div>
