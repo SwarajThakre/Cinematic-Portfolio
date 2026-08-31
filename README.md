@@ -1,7 +1,7 @@
 # Swaraj Thakre — Cinematic Portfolio
 
 <div align="center">
-  <img src="./src/assets/Hero.webp" alt="Cinematic portrait of Swaraj Thakre" width="100%" />
+  <img src="./public/assets/preview.png" alt="Cinematic portrait of Swaraj Thakre" width="100%" />
 
   <br />
   <br />
