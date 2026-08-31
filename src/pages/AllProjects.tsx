@@ -33,7 +33,7 @@ export default function AllProjects() {
         <span className="hidden sm:inline">Back</span>
       </motion.button>
 
-      <div className="relative z-10 mx-auto flex max-w-5xl flex-col items-center gap-10 pt-12">
+      <div className="relative z-10 mx-auto flex max-w-6xl flex-col items-center gap-10 pt-12">
         <motion.div
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -84,7 +84,7 @@ export default function AllProjects() {
             })}
           </div>
 
-          <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-6 md:grid-cols-2">
             {filteredProjects.map((project, index) => (
               <motion.article
                 key={project.id}
