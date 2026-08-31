@@ -1,11 +1,18 @@
 import { motion } from "framer-motion";
 import { ArrowLeft, ExternalLink, Layers } from "lucide-react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 import { projects } from "../data/projects";
 
 export default function AllProjects() {
   const navigate = useNavigate();
+  const [activeCategory, setActiveCategory] = useState("All");
+  const categories = ["All", ...new Set(projects.map((project) => project.category))];
+  const filteredProjects =
+    activeCategory === "All"
+      ? projects
+      : projects.filter((project) => project.category === activeCategory);
 
   return (
     <main className="relative min-h-screen overflow-x-hidden bg-black px-4 py-10 text-white select-none sm:px-6">
@@ -55,8 +62,30 @@ export default function AllProjects() {
             <h2 className="text-xl font-bold tracking-wide sm:text-2xl">Featured Projects</h2>
           </div>
 
+          <div className="mb-8 flex flex-wrap gap-2">
+            {categories.map((category) => {
+              const isActive = activeCategory === category;
+
+              return (
+                <button
+                  key={category}
+                  type="button"
+                  onClick={() => setActiveCategory(category)}
+                  aria-pressed={isActive}
+                  className={`cursor-pointer rounded-full border px-4 py-2 font-mono text-[10px] tracking-wider uppercase transition-all duration-300 ${
+                    isActive
+                      ? "border-white bg-white text-black"
+                      : "border-white/15 bg-white/5 text-white/70 hover:border-white/30 hover:bg-white/10 hover:text-white"
+                  }`}
+                >
+                  {category}
+                </button>
+              );
+            })}
+          </div>
+
           <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-            {projects.map((project, index) => (
+            {filteredProjects.map((project, index) => (
               <motion.article
                 key={project.id}
                 initial={{ opacity: 0, y: 20 }}
