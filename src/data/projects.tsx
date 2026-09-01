@@ -20,6 +20,7 @@ import backgroundChangerImage from "../assets/projects/background.png";
 import currencyConverterImage from "../assets/projects/currencyconverter.png";
 import passwordGeneratorImage from "../assets/projects/passwordgenerator.png";
 import reactTodoImage from "../assets/projects/todoreact.png";
+import WorkConnectImage from "../assets/projects/ss1.png";
 
 type ProjectCategory = "Basic Web" | "JavaScript" | "Node" | "React";
 
@@ -244,13 +245,21 @@ const projectData: RawProject[] = [
     github: "https://github.com/SwarajThakre/To-do_React",
     category: "React",
   },
+  {
+    name: "WorkConnect",
+    description:"A real-time messaging application built using React and Node.js that allows users to connect and communicate with each other in real-time.",
+    image: WorkConnectImage,
+    url: "#",
+    github: "https://github.com/SwarajThakre/WorkConnect",
+    category: "React",
+  }
 ];
 
 const techByCategory: Record<ProjectCategory, string[]> = {
   "Basic Web": ["HTML5", "CSS3", "JavaScript"],
-  JavaScript: ["JavaScript", "HTML5", "CSS3"],
-  Node: ["Node.js", "Express", "Socket.io"],
-  React: ["React", "JavaScript", "CSS3"],
+  "JavaScript": ["JavaScript", "HTML5", "CSS3"],
+  "Node": ["Node.js", "Express", "Socket.io"],
+  "React": ["React", "JavaScript", "CSS3"],
 };
 
 const projectStyles: Pick<Project, "glowColor" | "accentBg">[] = [
